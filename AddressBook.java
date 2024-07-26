@@ -113,6 +113,13 @@ public class AddressBook {
                         }
                     }while(editingchoice!=9);
                     break;
+                case 3:
+                    System.out.println("Enter the contact name to delete");
+                    String deleteName= scannerobject.nextLine();
+                    AddAddress objectaddaddress1=new AddAddress();
+                    objectaddaddress1.deleteContact(deleteName);
+                    System.out.println("Deleted Successfully");
+                    break;
                  
                 case 5:
                     System.out.println("Exiting");

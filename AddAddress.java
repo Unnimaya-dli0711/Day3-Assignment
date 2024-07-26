@@ -13,4 +13,11 @@ public class AddAddress {
         }
         return null;
     }
+
+    void deleteContact(String deleteName){
+        for(int i=0;i<contacts.size();i++){
+            if(contacts.get(i).firstname.equals(deleteName))
+                contacts.remove(i);
+        }
+    }
 }
