@@ -120,7 +120,31 @@ public class AddressBook {
                     objectaddaddress1.deleteContact(deleteName);
                     System.out.println("Deleted Successfully");
                     break;
-                 
+                case 4:
+                    System.out.println("Enter the number of contacts to be added");
+                    int number=scannerobject.nextInt();
+                    for(int i=0;i<number;i++){
+                        System.out.println("Enter the details to add to address book");
+                        System.out.println("Enter the first name");
+                        firstname=scannerobject.nextLine();
+                        System.out.println("Enter the last name");
+                        lastname=scannerobject.nextLine();
+                        System.out.println("Enter the Address");
+                        address=scannerobject.nextLine();
+                        System.out.println("Enter the state");
+                        state=scannerobject.nextLine();
+                        System.out.println("Enter the City");
+                        city=scannerobject.nextLine();
+                        System.out.println("Enter the phone number");
+                        phoneno=scannerobject.nextLine();
+                        System.out.println("Enter the Email");
+                        email=scannerobject.nextLine();
+                        System.out.println("Enter the zip");
+                        zip=scannerobject.nextInt();
+                        CreateContact contact2=new CreateContact(firstname,lastname, address, city, state, zip, phoneno,email);
+                        addAddress.addContact(contact2);
+                    }
+                    break;
                 case 5:
                     System.out.println("Exiting");
                     break;
